@@ -1,0 +1,53 @@
+html {
+	--white-background: #e5e5e5;
+	--gray-footer-background: #c4c4c4;
+    --blue-header: #005BC1;
+}
+.body,
+.main,
+.footer {
+	width: 100%;
+}
+/* 
+
+
+
+ */
+.logo-page {
+    width: 100%; /* 1920px; */
+	height: 900px; /* 900px; */
+	background: no-repeat center url(./img/bg-pink-blue-salut.jpg), var(--gray-footer-background);
+	background-size: cover;
+}
+.lopo-page::before{
+    content: '';
+    width: 100%;
+    position: relative;
+    background-color: ;
+}
+.header {
+	height: 900px; /* 900px; */
+	display: inline-block;
+}
+.nav {
+}
+.navigation-list {
+}
+.navigation-list-item {
+}
+.navigation-link {
+	padding: 31px 13px 30px 13px;
+}
+.big-header {
+}
+/* 
+
+
+
+ */
+
+/* 
+
+
+
+ */
