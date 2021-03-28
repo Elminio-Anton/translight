@@ -1,0 +1,110 @@
+* {
+	box-sizing: border-box;
+	color: green;
+}
+h2,
+h4,
+p,
+button,
+ul,
+body,
+section {
+	margin: 0;
+}
+ul {
+	list-style: none;
+	padding: 0px;
+}
+a {
+	text-decoration: none;
+}
+
+html {
+	--white-background: #e5e5e5;
+	--gray-footer-background: #c4c4c4;
+	--blue-transparent-header: rgba(0, 91, 193, 0.6);
+	--black-text: #343434;
+	--blue-text-link: #005bc1;
+	--gray-text: #979797;
+}
+body {
+	background-color: var(--white-background);
+}
+.body,
+.main,
+.footer {
+	width: 100%;
+}
+.navigation-link,
+.big-header-text,
+.button-goto,
+.image-slide-text,
+.rent-common-text,
+.product-info-list-item,
+.post-time,
+.big-news-read,
+.all-news,
+.big-news-text,
+.news-text,
+.footer-address,
+.footer-mail,
+.footer-nav-link,
+.footer-licence,
+.footer-author {
+	font-family: "Open Sans", sans-serif;
+}
+.big-header-heading,
+.our-projects-heading,
+.image-slide-heading,
+.product-catalogue-heading,
+.manufacturer-heading,
+.led-devices-heading,
+.controllers-heading,
+.accessories-heading,
+.equipment-rent-heading,
+.rent-slider-heading,
+.product-info-heading,
+.news-heading,
+.news-section-heading,
+.footer-phone {
+	font-family: "Oswald", sans-serif;
+}
+.big-header-heading,
+.navigation-link,
+.button-goto,
+.big-header-text,
+.image-slide-heading,
+.led-devices-heading,
+.controllers-heading,
+.accessories-heading,
+.all-news,
+.footer-phone,
+.footer-address,
+.footer-mail,
+.footer-nav-link,
+.footer-licence,
+.footer-author {
+	color: white;
+}
+.our-projects-heading,
+.image-slide-heading,
+.image-slide-text,
+.image-slide-heading,
+.image-slide-text,
+.manufacturer-link,
+.product-catalogue-heading,
+.equipment-rent-heading,
+.rent-common-text,
+.rent-slider-heading,
+.product-info-heading,
+.product-info-list-item,
+.news-heading,
+.news-section-heading,
+.big-news-text,
+.news-text,
+.big-news-read {
+	color: var(--black-text);
+}
+.post-time {
+	color: var(--gray-text);
+}

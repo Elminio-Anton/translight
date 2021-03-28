@@ -1,0 +1,392 @@
+.our-projects-slider-container {
+	max-width: 1110px;
+	height: 820px;
+	padding: 150px 10px 150px 10px;
+	display: flex;
+	margin: 0px auto;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.our-projects-heading,
+.product-catalogue-heading,
+.equipment-rent-heading,
+.news-heading {
+	font-size: 30px;
+	line-height: 44px;
+	letter-spacing: 0.05em;
+	font-weight: 400;
+
+	width: max-content;
+	height: max-content;
+	display: inline-grid;
+	grid-template: max-content/ repeat(2, max-content);
+	grid-gap: 40px;
+	align-items: center;
+}
+.our-projects-heading::before,
+.product-catalogue-heading::before,
+.equipment-rent-heading::before,
+.news-heading::before {
+	content: "";
+	display: inline-block;
+	width: 100px;
+	height: calc(3px * 2 + 13px);
+	background: top right no-repeat url(../img/line-100.svg),
+		bottom right no-repeat url(../img/line-50.svg), var(--white-background);
+}
+.buttons-container {
+	height: max-content;
+}
+
+.slides-container {
+	max-width: 1110px;
+	width: 100%;
+	overflow: hidden;
+	display: grid;
+	grid-template: 1fr/540px 540px 540px;
+	grid-gap: 30px;
+	width: 100%;
+	align-self: flex-end;
+}
+.image-slide-exposition,
+.image-slide-stage,
+.image-slide-empty {
+	width: 540px;
+	height: 400px;
+	display: grid;
+	grid-template: repeat(51, 1fr) max-content repeat(7, 1fr) / repeat(51, 1fr) max-content repeat(
+			7,
+			1fr
+		);
+}
+.image-slide-stage {
+	background: no-repeat center url(../img/bg-stage-slide.jpg), var(--gray-footer-background);
+}
+.image-slide-exposition {
+	background: no-repeat center url(../img/bg-exposition-slide.jpg), var(--gray-footer-background);
+}
+.image-slide-empty {
+	background-color: green;
+}
+.image-slider-right,
+.image-slider-left,
+.content-slider-left,
+.content-slider-right {
+	width: 55px;
+	height: 55px;
+	padding: 0;
+	border: solid 2px var(--blue-text-link);
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--white-background);
+}
+.image-slider-right,
+.content-slider-right {
+	border-left: none;
+	width: 52px;
+}
+.arrow-left,
+.arrow-right {
+	width: 12.59px;
+	height: 12.59px;
+	border-top: solid 2px var(--blue-text-link);
+	border-right: solid 2px var(--blue-text-link);
+	transform: translate(-2px) rotate(45deg);
+	display: inline-block;
+}
+.arrow-left {
+	transform: translate(5px) rotate(225deg);
+}
+
+.image-slide-content {
+	width: 250px;
+	height: 110px;
+	padding: 20px 25px;
+	background-color: white;
+	grid-area: 51/51/52/52;
+}
+.image-slide-heading {
+	font-size: 18px;
+	line-height: 27px;
+	letter-spacing: 0.05em;
+	font-weight: 400;
+}
+.image-slide-text {
+	font-size: 14px;
+	line-height: 19px;
+	font-weight: 300;
+	margin-top: 10px;
+}
+/* 
+
+
+
+ */
+.product-catalogue-container {
+	max-width: 1110px;
+	height: 505px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 0px auto;
+}
+.manufacturer-links-container {
+	height: max-content;
+	width: 100%;
+	display: grid;
+	grid-template: max-content/ 1fr repeat(2, max-content) 1fr;
+}
+.first-label {
+	grid-column: 2/3;
+}
+.radio-manufacturer {
+	display: none;
+}
+.manufacturer-heading {
+	font-size: 24px;
+	line-height: 36px;
+	font-weight: 400;
+	letter-spacing: 0.05em;
+
+	border-bottom: solid 2px var(--blue-text-link);
+	color: var(--blue-text-link);
+}
+.radio-manufacturer:checked + .label-manufacturer > .manufacturer-heading {
+	color: var(--black-text);
+	border-bottom: none;
+}
+.radio-manufacturer:checked + .label-manufacturer {
+	cursor: auto;
+}
+.label-manufacturer {
+	padding: 5px 25px;
+	cursor: pointer;
+	display: block;
+}
+
+.categories-container {
+	max-width: 1110px;
+	width: 100%;
+	overflow: auto;
+
+	display: grid;
+	grid-template: max-content / repeat(3, max-content);
+	grid-column-gap: 30px;
+}
+
+.led-devices-category,
+.controllers-category,
+.accessories-category {
+	width: 350px;
+	height: 300px;
+	border: solid 3px var(--blue-text-link);
+	position: relative;
+}
+.led-devices-category {
+	background: no-repeat center url(../img/bg-led-device.png), transparent;
+}
+.controllers-category {
+	background: no-repeat center url(../img/bg-controller.png), transparent;
+}
+.accessories-category {
+	background: no-repeat center url(../img/bg-accessory.png), transparent;
+}
+
+.led-devices-content,
+.controllers-content,
+.accessories-content {
+	width: 265px;
+	height: 86px;
+	background-color: var(--blue-text-link);
+	position: absolute;
+	right: 0px;
+	bottom: 15px;
+
+	padding: 0 33px 0 21px;
+	display: grid;
+	align-content: center;
+}
+.led-devices-heading,
+.controllers-heading,
+.accessories-heading {
+	font-size: 18px;
+	line-height: 27px;
+	font-weight: 400;
+	letter-spacing: 0.05em;
+
+	width: 100%;
+}
+/* 
+
+
+
+ */
+.equipment-rent-container {
+	max-width: 1110px;
+	height: max-content;
+	margin: 150px auto 0 auto;
+
+	padding: 0px 10px;
+
+	display: grid;
+	grid-template: max-content max-content / 350px 1fr 665px;
+	grid-gap: 40px 0px;
+	align-items: center;
+}
+.equipment-rent-heading {
+	grid-area: span 1 / span 3;
+}
+.rent-common-text {
+	font-size: 18px;
+	line-height: 25px;
+	font-weight: 300;
+
+	height: max-content;
+}
+.rent-slider-container {
+	width: max-content;
+	border: solid 3px var(--blue-text-link);
+	grid-area: 2/3/3/4;
+
+	padding: 30px;
+	display: grid;
+	grid-template: max-content max-content / max-content;
+	grid-row-gap: 29px;
+}
+.rent-slider-header {
+	display: grid;
+	grid-template: max-content / max-content 1fr max-content;
+	align-items: center;
+}
+.rent-slider-content {
+	display: grid;
+	grid-template: max-content / max-content max-content;
+	grid-column-gap: 30px;
+}
+.rent-slider-heading {
+	font-size: 18px;
+	line-height: 27px;
+	font-weight: 400;
+	letter-spacing: 0.05em;
+	font-style: normal;
+	height: max-content;
+}
+.rent-slider-buttons-container {
+	grid-column: 3/4;
+}
+
+.rent-product-info {
+	width: max-content;
+}
+.product-info-heading {
+	font-size: 16px;
+	line-height: 150%;
+	font-weight: 400;
+	letter-spacing: 0.05em;
+
+	width: max-content;
+	margin-bottom: 30px;
+}
+.product-info-list {
+	max-width: 315px;
+	height: 152px;
+	width: max-content;
+
+	list-style: disc;
+	padding-left: 16px;
+	display: grid;
+	align-items: stretch;
+}
+.product-info-list-item {
+	font-size: 14px;
+	line-height: 19px;
+	font-weight: 300;
+
+	max-width: 298px;
+	width: max-content;
+
+	margin-top: auto;
+	margin-bottom: auto;
+}
+/*
+
+
+
+
+
+
+
+
+
+*/
+
+@media (max-width: 1060px) {
+	.equipment-rent-container {
+		grid-template: max-content max-content max-content / 100%;
+	}
+	.equipment-rent-heading {
+		grid-area: 1/1/2/2;
+	}
+	.rent-common-text {
+		text-align: center;
+	}
+	.rent-slider-container {
+		grid-area: 3/1/4/2;
+		justify-self: center;
+	}
+}
+@media (max-width: 710px) {
+	.rent-slider-container {
+		grid-template: max-content max-content / 100%;
+		width: 100%;
+	}
+	.rent-slider-header {
+		width: 100%;
+	}
+}
+@media (max-width: 660px) {
+	.rent-slider-header {
+		grid-template: repeat(2, max-content) / 100%;
+		grid-row-gap: 20px;
+	}
+	.rent-slider-content {
+		grid-template: repeat(2, max-content) / 100%;
+		justify-items: center;
+		grid-row-gap: 20px;
+	}
+	.rent-slider-buttons-container {
+		grid-area: auto;
+		justify-self: center;
+	}
+}
+@media (max-width: 480px) {
+	.our-projects-heading,
+	.product-catalogue-heading,
+	.equipment-rent-heading,
+	.news-heading {
+		width: 100%;
+		grid-template-columns: max-content 1fr;
+	}
+}
+@media (max-width: 600px) {
+	.our-projects-slider-container {
+		padding-top: 100px;
+		align-items: flex-end;
+	}
+	.buttons-container {
+		height: max-content;
+		width: 100%;
+		display: grid;
+		grid-template: max-content/ 1fr repeat(2, max-content) 1fr;
+	}
+	.image-slider-left {
+		grid-column: 2/3;
+	}
+}
+@media (min-width: 1110px) {
+	.our-projects-slider-container {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+}
