@@ -130,6 +130,7 @@
 	flex-wrap: wrap;
 	justify-content: space-between;
 	margin: 0px auto;
+    padding: 0 10px;
 }
 .manufacturer-links-container {
 	height: max-content;

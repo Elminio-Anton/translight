@@ -1,12 +1,18 @@
 document.addEventListener("DOMContentLoaded", (event) => {
 	let portfolioSlidesContainer = document.querySelector(".slides-container")
-	let slidesCoords = [0, 570, 1140]
+	let baseSlidesCoords = [0, 570, 1140]
 	let currentImageSlide = 0
 
 	document.querySelector(".image-slider-left").addEventListener("click", (event) => {
 		event.preventDefault()
 
 		console.log("left")
+		let slidesCoords = baseSlidesCoords.slice()
+		if (portfolioSlidesContainer.clientWidth < 540)
+			slidesCoords.forEach(
+				(elem, i, arr) => (arr[i] += 540 - portfolioSlidesContainer.clientWidth)
+			)
+
 		if (currentImageSlide === 0) {
 			scrollH(portfolioSlidesContainer, slidesCoords[slidesCoords.length - 1], 200)
 			currentImageSlide = slidesCoords.length - 1
@@ -18,6 +24,11 @@ document.addEventListener("DOMContentLoaded", (event) => {
 	document.querySelector(".image-slider-right").addEventListener("click", (event) => {
 		event.preventDefault()
 		console.log("right")
+		let slidesCoords = baseSlidesCoords.slice()
+		if (portfolioSlidesContainer.clientWidth < 540)
+			slidesCoords.forEach(
+				(elem, i, arr) => (arr[i] += 540 - portfolioSlidesContainer.clientWidth)
+			)
 
 		if (currentImageSlide === slidesCoords.length - 1) {
 			scrollH(portfolioSlidesContainer, slidesCoords[0], 200)
