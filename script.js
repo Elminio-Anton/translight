@@ -37,6 +37,21 @@ document.addEventListener("DOMContentLoaded", (event) => {
 			scrollH(portfolioSlidesContainer, slidesCoords[++currentImageSlide])
 		}
 	})
+
+	document.querySelector(".body").addEventListener("click", ({ target }) => {
+		let burgerCheckbox = document.querySelector(".burger-checkbox")
+
+		if (
+			burgerCheckbox.checked === true &&
+			!target.classList.contains("burger-checkbox") &&
+			!target.classList.contains("burger")
+		)
+			burgerCheckbox.checked = false
+	})
+
+	document.querySelector(".burger-nav").addEventListener("click", (event) => {
+		event.stopPropagation()
+	})
 })
 
 const scrollH = (node, leftPosition, steps = 50) => {

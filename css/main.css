@@ -130,7 +130,7 @@
 	flex-wrap: wrap;
 	justify-content: space-between;
 	margin: 0px auto;
-    padding: 0 10px;
+	padding: 0 10px;
 }
 .manufacturer-links-container {
 	height: max-content;
@@ -173,7 +173,7 @@
 
 	display: grid;
 	grid-template: max-content / repeat(3, max-content);
-	grid-column-gap: 30px;
+	grid-column-gap: 20px;
 }
 
 .led-devices-category,
